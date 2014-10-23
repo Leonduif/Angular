@@ -1,6 +1,4 @@
-Angular
+AngularJS Project
 =======
 
-AngularJS project for fun!
-
-test 123
+This project contains an overview of the main characters in Season 1 of Game of Thrones.
