@@ -1,3 +1,11 @@
 * {
     @include box-sizing(border-box);
 }
+
+.cf {
+    &:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}

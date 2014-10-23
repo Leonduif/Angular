@@ -5,9 +5,32 @@
   box-sizing: border-box;
 }
 
+/* line 6, ../assets/sass/_general.scss */
+.cf:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
 /* line 1, ../assets/sass/_layout.scss */
 .container {
   display: block;
   margin: 0 auto;
   width: 80%;
+}
+
+/* line 7, ../assets/sass/_layout.scss */
+.pull-left {
+  float: left;
+}
+
+/* line 11, ../assets/sass/_layout.scss */
+.pull-right {
+  float: right;
+}
+
+/* line 1, ../assets/sass/_results.scss */
+.results_portrait {
+  width: 70px;
+  height: 70px;
 }

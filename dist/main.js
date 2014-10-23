@@ -251,7 +251,37 @@ console.log("WARNING: Tried to load angular more than once."):(Id(),Kd(ta),D(X).
 })();
 (function(){
     var app = angular.module('controllers', []);
+
+    app.controller('searchController', function(){
+
+    });
+
+    app.controller('resultsController', ['$http', function($http){
+        var that = this;
+
+        $http.get('/assets/data/data.json').success(function(data){
+            that.characters = data;
+        });
+    }]);
 })();
 (function(){
     var app = angular.module('directives', []);
+
+    app.directive('gotSearch', function(){
+        return {
+            restrict: 'E',
+            templateUrl: '/views/got-search.html',
+            controller: 'searchController',
+            controllerAs: 'search'
+        };
+    });
+
+    app.directive('gotResults', function(){
+        return {
+            restrict: 'E',
+            templateUrl: '/views/got-results.html',
+            controller: 'resultsController',
+            controllerAs: 'results'
+        };
+    });
 })();
