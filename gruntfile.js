@@ -29,7 +29,7 @@ module.exports = function(grunt) {
                 }
             },
             html: {
-                files: ['index.html', 'views/*.html'],
+                files: ['index.html', 'views/*.html', 'partials/*.html'],
                 options: {
                     livereload: true
                 }
@@ -46,6 +46,7 @@ module.exports = function(grunt) {
             files: {
                 src: [
                     'bower_components/angular/angular.min.js',
+                    'bower_components/angular-route/angular-route.min.js',
                     'assets/js/*.js'
                 ],
                 dest: 'dist/main.js'

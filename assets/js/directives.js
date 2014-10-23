@@ -4,7 +4,7 @@
     app.directive('gotSearch', function(){
         return {
             restrict: 'E',
-            templateUrl: '/views/got-search.html',
+            templateUrl: '/partials/got-search.html',
             controller: 'searchController',
             controllerAs: 'search'
         };
@@ -13,7 +13,7 @@
     app.directive('gotResults', function(){
         return {
             restrict: 'E',
-            templateUrl: '/views/got-results.html',
+            templateUrl: '/partials/got-results.html',
             controller: 'resultsController',
             controllerAs: 'results'
         };
