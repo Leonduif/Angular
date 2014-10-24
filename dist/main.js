@@ -263,14 +263,14 @@ this.current.$$route){var c={},f=this;e.forEach(Object.keys(a),function(b){f.cur
 //# sourceMappingURL=angular-route.min.js.map
 
 (function(){
-    var app = angular.module('GoT', ['controllers', 'directives', 'ngRoute']);
+    var app = angular.module('GoT', ['controllers', 'directives', 'ngRoute', 'customFilters']);
 
     app.config(['$routeProvider', function($routeProvider){
         $routeProvider
             .when('/home', {
                 templateUrl: '/views/home.html'
             })
-            .when('/character/:charId', {
+            .when('/character/:charShort', {
                 templateUrl: '/views/details.html',
                 controller: 'detailsController',
                 controllerAs: 'details'
@@ -289,6 +289,7 @@ this.current.$$route){var c={},f=this;e.forEach(Object.keys(a),function(b){f.cur
 
     app.controller('resultsController', ['$http', function($http){
         var that = this;
+        that.myName = "Leon";
 
         $http.get('/assets/data/data.json').success(function(data){
             that.characters = data;
@@ -297,7 +298,7 @@ this.current.$$route){var c={},f=this;e.forEach(Object.keys(a),function(b){f.cur
 
     app.controller('detailsController', ['$http', '$routeParams', function($http, $routeParams){
         var that = this;
-        that.charId = $routeParams.charId;
+        that.charShort = $routeParams.charShort;
 
         $http.get('/assets/data/data.json').success(function(data){
             that.characters = data;
@@ -322,6 +323,16 @@ this.current.$$route){var c={},f=this;e.forEach(Object.keys(a),function(b){f.cur
             templateUrl: '/partials/got-list.html',
             controller: 'resultsController',
             controllerAs: 'results'
+        };
+    });
+})();
+(function(){
+    var app = angular.module('customFilters', []);
+
+    // Filter to make the input lowercase and replace the spaces between words to a dashes
+    app.filter('shortenName', function(){
+        return function(input) {
+            return input.toLowerCase().replace(/(^\s+|[^a-zA-Z0-9 ]+|\s+$)/g,"").replace(/\s+/g, "-");
         };
     });
 })();
