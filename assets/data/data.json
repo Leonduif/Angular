@@ -4,7 +4,8 @@
     "bio":"Jon Snow is a major character in the first, second, third, fourth and fifth seasons. He is played by starring cast member Kit Harington, and debuts in the series premiere. Jon is the bastard son of the late Lord Eddard Stark of Winterfell. He is a steward in the Night's Watch. Now serving on the Wall, Jon has found a place of acceptance where the circumstances of his birth are of little importance. He has a pet direwolf named Ghost, and wields the bastard sword, Longclaw, which was a gift from Lord Commander Jeor Mormont who sees Jon as a surrogate son.",
     "parents": ["Ned Stark"],
     "siblings": ["Sansa Stark", "Arya Stark",  "Robb Stark", "Rickon Stark", "Bran Stark"],
-    "closeFriends": ["Robb Stark", "Arya Stark", "Tyrion Lannister"]
+    "closeFriends": ["Robb Stark", "Arya Stark", "Tyrion Lannister"],
+    "family": "Stark"
   },
   { "name":"Ned Stark",
     "portrait": "http://somekindofchristian.files.wordpress.com/2012/03/lg_eddard_stark.jpg",
@@ -12,7 +13,8 @@
     "sons":["Sansa Stark", "Arya Stark",  "Robb Stark", "Rickon Stark", "Bran Stark"],
     "marriage": ["Catelyn Tully"],
     "lovers": ["Catelyn Tully"],
-    "liege": ["Robert Baratheon"]
+    "liege": ["Robert Baratheon"],
+    "family": "Stark"
   },
   {
     "name": "Arya Stark",
@@ -20,14 +22,16 @@
     "bio": "",
     "parents": ["Ned Stark", "Catelyn Tully"],
     "siblings": ["Bran Stark", "Sansa Stark", "Jon Snow",  "Robb Stark", "Rickon Stark"],
-    "closeFriends": ["Jon Snow"]
+    "closeFriends": ["Jon Snow"],
+    "family": "Stark"
   },
   {
     "name": "Sansa Stark",
     "portrait": "http://images5.fanpop.com/image/photos/25300000/Sansa-Stark-game-of-thrones-25314483-1266-1900.jpg",
     "bio": "",
     "parents": ["Ned Stark", "Catelyn Tully"],
-    "siblings": ["Robb Stark", "Arya Stark", "Bran Stark", "Robb Stark", "Rickon Stark", "Jon Snow"]
+    "siblings": ["Robb Stark", "Arya Stark", "Bran Stark", "Robb Stark", "Rickon Stark", "Jon Snow"],
+    "family": "Stark"
   },
   {
     "name": "Robb Stark",
@@ -35,21 +39,24 @@
     "bio":"",
     "parents": ["Ned Stark", "Catelyn Tully"],
     "closeFriends": ["Theon Greyjoy"],
-    "siblings": ["Sansa Stark", "Arya Stark",  "Bran Stark", "Rickon Stark", "Jon Snow"]
+    "siblings": ["Sansa Stark", "Arya Stark",  "Bran Stark", "Rickon Stark", "Jon Snow"],
+    "family": "Stark"
   },
   {
     "name": "Bran Stark",
     "portrait":"http://media.screened.com/uploads/1/14624/520256-screenshot_game.of.thrones.s01e01.winter.is.coming.avi_1.png",
     "bio":"",
     "parents": ["Ned Stark", "Catelyn Tully"],
-    "siblings": ["Sansa Stark", "Arya Stark",  "Robb Stark", "Rickon Stark", "Jon Snow"]
+    "siblings": ["Sansa Stark", "Arya Stark",  "Robb Stark", "Rickon Stark", "Jon Snow"],
+    "family": "Stark"
   },
   {
     "name": "Rickon Stark",
     "portrait": "http://sharetv.org/images/game_of_thrones/cast/large/rickon_stark.jpg",
     "bio":"",
     "parents": ["Ned Stark", "Catelyn Tully"],
-    "siblings": ["Sansa Stark", "Arya Stark",  "Robb Stark", "Jon Snow", "Bran Stark"]
+    "siblings": ["Sansa Stark", "Arya Stark",  "Robb Stark", "Jon Snow", "Bran Stark"],
+    "family": "Stark"
   },
   {
     "name": "Catelyn Tully",
@@ -57,13 +64,15 @@
     "bio": "",
     "sons": ["Sansa Stark", "Arya Stark",  "Robb Stark", "Rickon Stark", "Bran Stark"],
     "marriage": ["Ned Stark"],
-    "lovers": ["Ned Stark"]
+    "lovers": ["Ned Stark"],
+    "family": "Tully"
   },
   {
     "name": "Theon Greyjoy",
     "portrait": "http://images2.wikia.nocookie.net/__cb20120328201352/hieloyfuego/images/7/73/Theon_Greyjoy.jpg",
     "bio": "",
-    "closeFriends": ["Robb Stark"]
+    "closeFriends": ["Robb Stark"],
+    "family": "Greyjoy"
   },
   {
     "name": "Robert Baratheon",
@@ -71,7 +80,8 @@
     "bio": "",
     "closeFriends": ["Ned Stark"],
     "marriage": ["Cersei Lannister"],
-    "sons": ["Tommen Baratheon", "Joffrey Baratheon", "Myrcella Baratheon"]
+    "sons": ["Tommen Baratheon", "Joffrey Baratheon", "Myrcella Baratheon"],
+    "family": "Baratheon"
   },
   {
     "name": "Cersei Lannister",
@@ -80,7 +90,8 @@
     "marriage": ["Robert Baratheon"],
     "lovers": ["Jaime Lannister"],
     "siblings":  ["Jaime Lannister", "Tyrion Lannister"],
-    "sons": ["Tommen Baratheon", "Joffrey Baratheon", "Myrcella Baratheon"]
+    "sons": ["Tommen Baratheon", "Joffrey Baratheon", "Myrcella Baratheon"],
+    "family": "Lannister"
   },
   {
     "name": "Jaime Lannister",
@@ -89,41 +100,46 @@
     "lovers": ["Cersei Lannister"],
     "siblings":  ["Cersei Lannister", "Tyrion Lannister"],
     "sons": ["Tommen Baratheon", "Joffrey Baratheon", "Myrcella Baratheon"],
-    "liege": ["Robert Baratheon"]
+    "liege": ["Robert Baratheon"],
+    "family": "Lannister"
   },
   {
     "name": "Tyrion Lannister",
     "portrait": "http://afondo.elnortedecastilla.es/sites/afondo.elnortedecastilla.es/files/images/juego-de-tronos/personajes/tyrion-lannister-1024.jpg",
     "bio": "",
-    "siblings":  ["Cersei Lannister", "Jaime Lannister", "Jon Snow"]    
+    "siblings":  ["Cersei Lannister", "Jaime Lannister", "Jon Snow"],
+    "family": "Lannister"
   },
   {
     "name": "Joffrey Baratheon",
     "portrait": "http://images.wikia.com/gameofthrones/images/archive/5/5f/20110626031339!Joffrey_Baratheon_2.jpg",
     "bio":"",
     "parents": ["Robert Baratheon", "Cersei Lannister", "Jaime Lannister"],
-    "siblings": ["Tommen Baratheon", "Myrcella Baratheon"]
+    "siblings": ["Tommen Baratheon", "Myrcella Baratheon"],
+    "family": "Baratheon"
   },
   {
     "name": "Tommen Baratheon",
     "portrait": "http://static.tumblr.com/yepbadd/JlVm7hl07/tommen_2x01.jpeg",
     "bio":"",
     "parents": ["Robert Baratheon", "Cersei Lannister", "Jaime Lannister"],
-    "siblings": ["Joffrey Baratheon", "Myrcella Baratheon"]
+    "siblings": ["Joffrey Baratheon", "Myrcella Baratheon"],
+    "family": "Baratheon"
   },
   {
     "name": "Myrcella Baratheon",
     "portrait": "http://24.media.tumblr.com/tumblr_m7qpplTaLV1rp2zn0o1_250.gif",
     "bio":"",
     "parents": ["Robert Baratheon", "Cersei Lannister", "Jaime Lannister"],
-    "siblings": ["Joffrey Baratheon", "Tommen Baratheon"]
+    "siblings": ["Joffrey Baratheon", "Tommen Baratheon"],
+    "family": "Baratheon"
   },
   {
     "name": "Petyr Baelish",
     "portrait":"https://si0.twimg.com/profile_images/1391388163/asdfas-littlefinger.png",
     "alias": "littlefinger",
     "closeFriend": "Catelyn Tully",
-    "liege": ["Robert Baratheon"]
+    "liege": ["Robert Baratheon"],
+    "family": "Baelish"
   }
-
 ]
