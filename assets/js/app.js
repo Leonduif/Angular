@@ -7,7 +7,7 @@
                 templateUrl: '/views/home.html'
             })
             .when('/character/:charId', {
-                templateUrl: '/views/character.html',
+                templateUrl: '/views/details.html',
                 controller: 'detailsController',
                 controllerAs: 'details'
             }).

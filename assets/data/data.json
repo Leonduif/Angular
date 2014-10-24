@@ -1,7 +1,7 @@
 [
   { "name":"Jon Snow",
     "portrait": "http://sharetv.org/images/game_of_thrones/cast/large/jon_snow.jpg",
-    "bio":"",
+    "bio":"Jon Snow is a major character in the first, second, third, fourth and fifth seasons. He is played by starring cast member Kit Harington, and debuts in the series premiere. Jon is the bastard son of the late Lord Eddard Stark of Winterfell. He is a steward in the Night's Watch. Now serving on the Wall, Jon has found a place of acceptance where the circumstances of his birth are of little importance. He has a pet direwolf named Ghost, and wields the bastard sword, Longclaw, which was a gift from Lord Commander Jeor Mormont who sees Jon as a surrogate son.",
     "parents": ["Ned Stark"],
     "siblings": ["Sansa Stark", "Arya Stark",  "Robb Stark", "Rickon Stark", "Bran Stark"],
     "closeFriends": ["Robb Stark", "Arya Stark", "Tyrion Lannister"]

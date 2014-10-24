@@ -13,7 +13,7 @@
     app.directive('gotResults', function(){
         return {
             restrict: 'E',
-            templateUrl: '/partials/got-results.html',
+            templateUrl: '/partials/got-list.html',
             controller: 'resultsController',
             controllerAs: 'results'
         };

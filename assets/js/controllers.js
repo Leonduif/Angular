@@ -2,7 +2,7 @@
     var app = angular.module('controllers', []);
 
     app.controller('searchController', function(){
-
+        this.orderBy = 'name';
     });
 
     app.controller('resultsController', ['$http', function($http){

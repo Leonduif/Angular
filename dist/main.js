@@ -271,7 +271,7 @@ this.current.$$route){var c={},f=this;e.forEach(Object.keys(a),function(b){f.cur
                 templateUrl: '/views/home.html'
             })
             .when('/character/:charId', {
-                templateUrl: '/views/character.html',
+                templateUrl: '/views/details.html',
                 controller: 'detailsController',
                 controllerAs: 'details'
             }).
@@ -284,7 +284,7 @@ this.current.$$route){var c={},f=this;e.forEach(Object.keys(a),function(b){f.cur
     var app = angular.module('controllers', []);
 
     app.controller('searchController', function(){
-
+        this.orderBy = 'name';
     });
 
     app.controller('resultsController', ['$http', function($http){
@@ -319,7 +319,7 @@ this.current.$$route){var c={},f=this;e.forEach(Object.keys(a),function(b){f.cur
     app.directive('gotResults', function(){
         return {
             restrict: 'E',
-            templateUrl: '/partials/got-results.html',
+            templateUrl: '/partials/got-list.html',
             controller: 'resultsController',
             controllerAs: 'results'
         };
