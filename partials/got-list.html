@@ -1,6 +1,6 @@
 <ul>
     <li class="results cf" ng-repeat="character in results.characters | filter: { name: search.query } | orderBy: search.orderBy">
-        <a href="/#/character/{{character.name | shortenName}}">
+        <a href="/#/character/{{character.id}}">
             <h3>{{character.name}}</h3>
         </a>
     </li>

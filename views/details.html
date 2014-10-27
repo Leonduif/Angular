@@ -1,9 +1,52 @@
 <h1>Details</h1>
-<h2>{{details.characters[details.charId].name}}</h2>
-<p>{{details.characters[details.charId].bio}}</p>
+<h2>{{details.currentChar.name}}</h2>
+<ul>
+    <li ng-show="details.currentChar.parents">Parents</li>
+    <li ng-repeat="relevantPeople in details.currentChar.parents">
+        <a href="/#/character/{{relevantPeople | shortenName}}">{{relevantPeople}}</a>
+    </li>
+</ul>
 
-<p>{{details.characters[0].name}}</p>
-<p>{{details.charShort}}</p>
-<p>{{details.testing}}</p>
+<ul ng-show="details.currentChar.siblings">
+    <li>Siblings</li>
+    <li ng-repeat="relevantPeople in details.currentChar.siblings">
+        <a href="/#/character/{{relevantPeople | shortenName}}">{{relevantPeople}}</a>
+    </li>
+</ul>
+
+<ul ng-show="details.currentChar.closeFriends">
+    <li>Close friends</li>
+    <li ng-repeat="relevantPeople in details.currentChar.closeFriends">
+        <a href="/#/character/{{relevantPeople | shortenName}}">{{relevantPeople}}</a>
+    </li>
+</ul>
+
+<ul ng-show="details.currentChar.sons">
+    <li>Sons</li>
+    <li ng-repeat="relevantPeople in details.currentChar.sons">
+        <a href="/#/character/{{relevantPeople | shortenName}}">{{relevantPeople}}</a>
+    </li>
+</ul>
+
+<ul ng-show="details.currentChar.marriage">
+    <li>Marriage</li>
+    <li ng-repeat="relevantPeople in details.currentChar.marriage">
+        <a href="/#/character/{{relevantPeople | shortenName}}">{{relevantPeople}}</a>
+    </li>
+</ul>
+
+<ul ng-show="details.currentChar.lovers">
+    <li>Lovers</li>
+    <li ng-repeat="relevantPeople in details.currentChar.lovers">
+        <a href="/#/character/{{relevantPeople | shortenName}}">{{relevantPeople}}</a>
+    </li>
+</ul>
+
+<ul ng-show="details.currentChar.liege">
+    <li>Liege</li>
+    <li ng-repeat="relevantPeople in details.currentChar.liege">
+        <a href="/#/character/{{relevantPeople | shortenName}}">{{relevantPeople}}</a>
+    </li>
+</ul>
 
 <a href="/#/home">&lt; Back</a>

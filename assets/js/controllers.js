@@ -18,8 +18,14 @@
         var that = this;
         that.charShort = $routeParams.charShort;
 
-        $http.get('/assets/data/data.json').success(function(data){
-            that.characters = data;
+        $http.get('/assets/data/data.json').success(function(data) {
+
+            // Retrieves selected character and stores it in details.currentChar
+            for (var i = 0; data.length > i; i++) {
+                if (data[i].id === $routeParams.charShort) {
+                    that.currentChar = data[i];
+                }
+            }
         });
     }]);
 })();

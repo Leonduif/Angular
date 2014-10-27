@@ -7,4 +7,10 @@
             return input.toLowerCase().replace(/(^\s+|[^a-zA-Z0-9 ]+|\s+$)/g,"").replace(/\s+/g, "-");
         };
     });
+
+    app.filter('fullName', function(){
+        return function (input) {
+            return input.replace(/-/g, ' ').replace(/([^ \t]+)/g);
+        };
+    });
 })();

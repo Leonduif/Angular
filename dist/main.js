@@ -300,8 +300,14 @@ this.current.$$route){var c={},f=this;e.forEach(Object.keys(a),function(b){f.cur
         var that = this;
         that.charShort = $routeParams.charShort;
 
-        $http.get('/assets/data/data.json').success(function(data){
-            that.characters = data;
+        $http.get('/assets/data/data.json').success(function(data) {
+
+            // Retrieves selected character and stores it in details.currentChar
+            for (var i = 0; data.length > i; i++) {
+                if (data[i].id === $routeParams.charShort) {
+                    that.currentChar = data[i];
+                }
+            }
         });
     }]);
 })();
@@ -333,6 +339,12 @@ this.current.$$route){var c={},f=this;e.forEach(Object.keys(a),function(b){f.cur
     app.filter('shortenName', function(){
         return function(input) {
             return input.toLowerCase().replace(/(^\s+|[^a-zA-Z0-9 ]+|\s+$)/g,"").replace(/\s+/g, "-");
+        };
+    });
+
+    app.filter('fullName', function(){
+        return function (input) {
+            return input.replace(/-/g, ' ').replace(/([^ \t]+)/g);
         };
     });
 })();
