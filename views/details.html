@@ -1,54 +1,58 @@
-<h1>Details</h1>
+<div class="page-header">
+    <h1>Details</h1>
+</div>
 <h2>{{details.currentChar.name}}</h2>
-<p>{{details.currentChar.bio}}</p>
-<ul>
-    <li ng-show="details.currentChar.parents">Parents</li>
-    <li ng-repeat="relevantPeople in details.currentChar.parents">
-        <a href="/#/character/{{relevantPeople | shortenName}}">{{relevantPeople}}</a>
-    </li>
-</ul>
-
-<ul ng-show="details.currentChar.siblings">
-    <li>Siblings</li>
-    <li ng-repeat="relevantPeople in details.currentChar.siblings">
-        <a href="/#/character/{{relevantPeople | shortenName}}">{{relevantPeople}}</a>
-    </li>
-</ul>
-
-<ul ng-show="details.currentChar.closeFriends">
-    <li>Close friends</li>
-    <li ng-repeat="relevantPeople in details.currentChar.closeFriends">
-        <a href="/#/character/{{relevantPeople | shortenName}}">{{relevantPeople}}</a>
-        <img ng-src="{{details.currentChar.thumbnail}}" alt="">
-    </li>
-</ul>
-
-<ul ng-show="details.currentChar.sons">
-    <li>Sons</li>
-    <li ng-repeat="relevantPeople in details.currentChar.sons">
-        <a href="/#/character/{{relevantPeople | shortenName}}">{{relevantPeople}}</a>
-    </li>
-</ul>
-
-<ul ng-show="details.currentChar.marriage">
-    <li>Marriage</li>
-    <li ng-repeat="relevantPeople in details.currentChar.marriage">
-        <a href="/#/character/{{relevantPeople | shortenName}}">{{relevantPeople}}</a>
-    </li>
-</ul>
-
-<ul ng-show="details.currentChar.lovers">
-    <li>Lovers</li>
-    <li ng-repeat="relevantPeople in details.currentChar.lovers">
-        <a href="/#/character/{{relevantPeople | shortenName}}">{{relevantPeople}}</a>
-    </li>
-</ul>
-
-<ul ng-show="details.currentChar.liege">
-    <li>Liege</li>
-    <li ng-repeat="relevantPeople in details.currentChar.liege">
-        <a href="/#/character/{{relevantPeople | shortenName}}">{{relevantPeople}}</a>
-    </li>
-</ul>
-
-<a href="/#/home">&lt; Back</a>
+<div class="row media bottom-buffer">
+    <img ng-src="{{details.currentChar.portrait}}" alt="" class="pull-left col-md-4 thumbnail">
+    <p class="media-body col-md-5 first-char">{{details.currentChar.bio}}</p>
+</div>
+<div class="row">
+    <ul class="list-group col-md-4" ng-show="details.currentChar.parents">
+        <li class="list-group-item" ng-show="details.currentChar.parents">Parents</li>
+        <li class="list-group-item" ng-repeat="relevantPeople in details.currentChar.parents">
+            <a href="/#/character/{{relevantPeople | shortenName}}">{{relevantPeople}}</a>
+        </li>
+    </ul>
+    
+    <ul class="list-group col-md-4" ng-show="details.currentChar.siblings">
+        <li class="list-group-item">Siblings</li>
+        <li class="list-group-item" ng-repeat="relevantPeople in details.currentChar.siblings">
+            <a href="/#/character/{{relevantPeople | shortenName}}">{{relevantPeople}}</a>
+        </li>
+    </ul>
+    
+    <ul class="list-group col-md-4" ng-show="details.currentChar.closeFriends">
+        <li class="list-group-item" >Close friends</li>
+        <li class="list-group-item" ng-repeat="relevantPeople in details.currentChar.closeFriends">
+            <a href="/#/character/{{relevantPeople | shortenName}}">{{relevantPeople}}</a>
+        </li>
+    </ul>
+    
+    <ul class="list-group col-md-4" ng-show="details.currentChar.sons">
+        <li class="list-group-item">Sons</li>
+        <li class="list-group-item" ng-repeat="relevantPeople in details.currentChar.sons">
+            <a href="/#/character/{{relevantPeople | shortenName}}">{{relevantPeople}}</a>
+        </li>
+    </ul>
+    
+    <ul class="list-group col-md-4" ng-show="details.currentChar.marriage">
+        <li class="list-group-item" >Marriage</li>
+        <li class="list-group-item" ng-repeat="relevantPeople in details.currentChar.marriage">
+            <a href="/#/character/{{relevantPeople | shortenName}}">{{relevantPeople}}</a>
+        </li>
+    </ul>
+    
+    <ul class="list-group col-md-4" ng-show="details.currentChar.lovers">
+        <li class="list-group-item" >Lovers</li>
+        <li class="list-group-item" ng-repeat="relevantPeople in details.currentChar.lovers">
+            <a href="/#/character/{{relevantPeople | shortenName}}">{{relevantPeople}}</a>
+        </li>
+    </ul>
+    
+    <ul class="list-group col-md-4" ng-show="details.currentChar.liege">
+        <li class="list-group-item" >Liege</li>
+        <li class="list-group-item" ng-repeat="relevantPeople in details.currentChar.liege">
+            <a href="/#/character/{{relevantPeople | shortenName}}">{{relevantPeople}}</a>
+        </li>
+    </ul>
+</div>

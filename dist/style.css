@@ -1,3 +1,4 @@
+@import url(/bower_components/bootstrap/dist/css/bootstrap.min.css);
 /* line 1, ../assets/sass/_general.scss */
 * {
   -moz-box-sizing: border-box;
@@ -12,8 +13,12 @@
   clear: both;
 }
 
-/* line 1, ../assets/sass/_results.scss */
-.results_portrait {
-  width: 70px;
-  height: 70px;
+/* line 1, ../assets/sass/_details.scss */
+.first-char:first-letter {
+  font-size: 4em;
+}
+
+/* line 5, ../assets/sass/_details.scss */
+.got-thumbnail {
+  height: 100%;
 }

@@ -1,12 +1,14 @@
-<form name="got-search">
-    <label>
-        Search GoT Characters
-        <input type="search" placeholder="Ned stark" ng-model="search.query">
-    </label>
-    <label>
-        <select ng-model="search.orderBy">
-            <option value="name">Alphabetical</option>
-            <option value="family">Family</option>
-        </select>
-    </label>
+<form name="got-search" role="form">
+    <div class="form-group">
+        <label>
+            Search GoT Characters
+            <input class="form-control" type="search" placeholder="Ned stark" ng-model="search.query">
+        </label>
+        <label>
+            <select class="form-control" ng-model="search.orderBy">
+                <option value="name">Alphabetical</option>
+                <option value="family">Family</option>
+            </select>
+        </label>
+    </div>
 </form>

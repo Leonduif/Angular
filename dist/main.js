@@ -332,6 +332,13 @@ this.current.$$route){var c={},f=this;e.forEach(Object.keys(a),function(b){f.cur
             controllerAs: 'results'
         };
     });
+
+    app.directive('gotHeader', function(){
+        return {
+            restrict: 'E',
+            templateUrl: '/partials/got-header.html'
+        };
+    });
 })();
 (function(){
     var app = angular.module('customFilters', []);
