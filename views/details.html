@@ -1,5 +1,6 @@
 <h1>Details</h1>
 <h2>{{details.currentChar.name}}</h2>
+<p>{{details.currentChar.bio}}</p>
 <ul>
     <li ng-show="details.currentChar.parents">Parents</li>
     <li ng-repeat="relevantPeople in details.currentChar.parents">
@@ -18,6 +19,7 @@
     <li>Close friends</li>
     <li ng-repeat="relevantPeople in details.currentChar.closeFriends">
         <a href="/#/character/{{relevantPeople | shortenName}}">{{relevantPeople}}</a>
+        <img ng-src="{{details.currentChar.thumbnail}}" alt="">
     </li>
 </ul>
 

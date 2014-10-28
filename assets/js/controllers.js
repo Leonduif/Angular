@@ -19,6 +19,7 @@
         that.charShort = $routeParams.charShort;
 
         $http.get('/assets/data/data.json').success(function(data) {
+            that.characters = data;
 
             // Retrieves selected character and stores it in details.currentChar
             for (var i = 0; data.length > i; i++) {
