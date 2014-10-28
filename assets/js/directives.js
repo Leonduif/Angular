@@ -18,4 +18,11 @@
             controllerAs: 'results'
         };
     });
+
+    app.directive('gotHeader', function(){
+        return {
+            restrict: 'E',
+            templateUrl: '/partials/got-header.html'
+        };
+    });
 })();

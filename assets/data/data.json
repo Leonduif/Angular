@@ -9,7 +9,7 @@
     "id": "jon-snow"
   },
   { "name":"Ned Stark",
-    "portrait": "http://somekindofchristian.files.wordpress.com/2012/03/lg_eddard_stark.jpg",
+    "portrait": "http://img3.wikia.nocookie.net/__cb20110626030942/gameofthrones/images/9/9c/EddardStark.jpg",
     "bio":"Eddard Stark, also known by his friends and family as Ned, is a major character in the first season. He is played by starring cast member Sean Bean, and debuts in the series premiere. Eddard is the head of House Stark and Lord Paramount of the North. He is a dedicated husband and father, a loyal friend and an honorable lord. Eddard becomes Hand of the King to his lifelong friend, Robert Baratheon, when the previous hand dies in suspicious circumstances. He follows his predecessor's footsteps and uncovers an incestuous relationship between Queen, Cersei Lannister, and her brother, Ser Jaime Lannister.",
     "sons":["Sansa Stark", "Arya Stark",  "Robb Stark", "Rickon Stark", "Bran Stark"],
     "marriage": ["Catelyn Tully"],
@@ -49,7 +49,7 @@
   },
   {
     "name": "Bran Stark",
-    "portrait":"http://media.screened.com/uploads/1/14624/520256-screenshot_game.of.thrones.s01e01.winter.is.coming.avi_1.png",
+    "portrait":"https://pbs.twimg.com/profile_images/456832990820048896/rOuhUc8s_400x400.png",
     "bio":"Brandon Stark, commonly called \"Bran\", is a major character in the first, second, third, fourth and fifth seasons. He is played by starring cast member Isaac Hempstead-Wright and debuts in the series premiere. Bran Stark is a noble boy living with his family in Winterfell. He lost the use of his legs after being pushed out of a tower window. He relies on the servant Hodor to aid his mobility. He has had prophetic dreams.",
     "parents": ["Ned Stark", "Catelyn Tully"],
     "siblings": ["Sansa Stark", "Arya Stark",  "Robb Stark", "Rickon Stark", "Jon Snow"],
@@ -67,8 +67,8 @@
   },
   {
     "name": "Catelyn Tully",
-    "portrait": "http://img12.imageshack.us/img12/6302/catelyntully.jpg",
-    "bio": "Catelyn Stark, née Tully, is a major character in the first, second and third seasons. She is played by starring cast member Michelle Fairley, and debuts in the series premiere. She was played in the unaired pilot by Jennifer Ehle but the role was recast. Catelyn is from House Tully and married into House Stark. She is a devoted mother and is fiercely protective of her children. Her husband, Eddard Stark, is the Lord paramount of the North.",
+    "portrait": "http://1.bp.blogspot.com/--5jekqHTYHY/USvbudP9W2I/AAAAAAAAADs/70K8G5Hm8oo/s1600/Catelyn+Tully.jpg",
+    "bio": "Catelyn Stark, is a major character in the first, second and third seasons. She is played by starring cast member Michelle Fairley, and debuts in the series premiere. She was played in the unaired pilot by Jennifer Ehle but the role was recast. Catelyn is from House Tully and married into House Stark. She is a devoted mother and is fiercely protective of her children. Her husband, Eddard Stark, is the Lord paramount of the North.",
     "sons": ["Sansa Stark", "Arya Stark",  "Robb Stark", "Rickon Stark", "Bran Stark"],
     "marriage": ["Ned Stark"],
     "lovers": ["Ned Stark"],
@@ -120,6 +120,7 @@
     "portrait": "http://afondo.elnortedecastilla.es/sites/afondo.elnortedecastilla.es/files/images/juego-de-tronos/personajes/tyrion-lannister-1024.jpg",
     "bio": "Tyrion Lannister is a major character in the first, second, third, fourth and fifth seasons. He is played by starring cast member Peter Dinklage and debuts in the series premiere. Tyrion Lannister is the youngest son of Lord Tywin Lannister and younger brother of Cersei and Jaime Lannister. A dwarf, he uses his wit and intellect to overcome the prejudice he faces.",
     "siblings":  ["Cersei Lannister", "Jaime Lannister", "Jon Snow"],
+    "closeFriends": ["Jon Snow"],
     "family": "Lannister",
     "id": "tyrion-lannister"
   },
@@ -152,8 +153,8 @@
   },
   {
     "name": "Petyr Baelish",
+    "portrait":"https://pbs.twimg.com/profile_images/463558607129165824/_-zV2xJh_400x400.jpeg",
     "bio": "Petyr Baelish, popularly called Littlefinger, is a major character in the first, second, third, fourth and fifth seasons. He is played by starring cast member Aidan Gillen and debuts in \"Lord Snow.\" Petyr Baelish was the Master of Coin on the Small Council. He is a skilled manipulator and uses his ownership of brothels in King's Landing to accrue intelligence on political rivals. Baelish's spy network is eclipsed only by that of Varys.",
-    "portrait":"https://si0.twimg.com/profile_images/1391388163/asdfas-littlefinger.png",
     "alias": "littlefinger",
     "closeFriend": "Catelyn Tully",
     "liege": ["Robert Baratheon"],

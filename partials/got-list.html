@@ -1,7 +1,8 @@
-<ul>
-    <li class="results cf" ng-repeat="character in results.characters | filter: { name: search.query } | orderBy: search.orderBy">
-        <a href="/#/character/{{character.id}}">
-            <h3>{{character.name}}</h3>
+<ul class="list-group">
+    <li class="list-group-item" ng-repeat="character in results.characters | filter: { name: search.query } | orderBy: search.orderBy">
+        <a class="media cf" href="/#/character/{{character.id}}">
+            <img class="col-md-1 pull-left got-thumbnail" ng-src="{{character.portrait}}" alt="">
+            <p class="media-body">{{character.name}}</p>
         </a>
     </li>
 </ul>

@@ -1,13 +1,9 @@
-.container {
-    display: block;
-    margin: 0 auto;
-    width: 80%;
+$spacing: 20px;
+
+.bottom-buffer {
+    margin-bottom: $spacing;
 }
 
-.pull-left {
-    float: left;
-}
-
-.pull-right {
-    float: right;
+.top-buffer {
+    margin-top: $spacing;
 }
